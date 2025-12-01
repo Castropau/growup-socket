@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "socket:dev": "ts-node-dev --respawn --transpile-only socket-server.ts"
+    "socket:dev": "ts-node-dev  socket-server.ts"
   },
   "keywords": [],
   "author": "",
