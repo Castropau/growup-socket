@@ -69,7 +69,7 @@ const server = http.createServer(app);
 // });
 const io = new IOServer(server, {
   cors: {
-    origin: "http://localhost:3000",  // The frontend URL
+    origin: "https://growup-9psm.onrender.com",  // The frontend URL
     methods: ["GET", "POST"],
     credentials: true,
   },

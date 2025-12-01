@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new socketIo.Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // Allow requests from all origins (you may want to be more restrictive in production)
+    origin: 'https://growup-9psm.onrender.com', // Allow requests from all origins (you may want to be more restrictive in production)
   }
 });
 
