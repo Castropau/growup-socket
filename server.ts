@@ -6,8 +6,12 @@ const app = express();
 const server = http.createServer(app);
 const io = new socketIo.Server(server, {
   cors: {
-    origin: 'https://growup-9psm.onrender.com', // Allow requests from all origins (you may want to be more restrictive in production)
-  }
+    // origin: 'https://growup-9psm.onrender.com', // Allow requests from all origins (you may want to be more restrictive in production)
+origin: [
+      'https://growup-9psm.onrender.com',   // Allow requests from Render domain
+      'https://chat-frontend-one-sigma.vercel.app'  // Allow requests from Vercel domain
+    ],  
+}
 });
 
 io.on('connection', (socket) => {
